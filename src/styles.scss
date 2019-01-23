@@ -1,0 +1,142 @@
+$colorMain: #8146A2;
+$colorText: #9BA2A6;
+$colorBorder: #F5F5F5;
+
+body {
+  margin: 75px 0;
+  font-family: 'Raleway', sans-serif;
+  line-height: 34px;
+  font-size: 20px;
+  color: $colorText;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+  width: 450px;
+  box-shadow: (0 0 8px rgba(0, 0, 0, .1))
+}
+
+.card h2, .card h3 {
+  text-align: center;
+}
+
+.card h2 {
+  color: $colorMain;
+  font-weight: normal;
+  margin: 20px 0 0px;
+  font-size: 28px;
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: black;
+}
+
+.card-back h3 {
+  margin-bottom: 10px;
+}
+
+.card-container, .card-container-grid {
+  padding: 0 20px;
+}
+
+.card-container-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 15px;
+  text-align: center;
+  line-height: normal;
+  position: relative;
+}
+
+.card-container-grid .name {
+  text-align: left;
+}
+
+.card-container-grid .heading {
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+.card-container-grid span {
+  border-bottom: 1px solid $colorBorder;
+  padding: 10px 0;
+}
+
+.card-container-grid .heading:first-child {
+  text-align: left;
+}
+
+.card-front h2, .card-front h3 {
+  text-align: left;
+}
+
+.card-back #donated-total-footer {
+  margin: 65px 0 20px;
+  font-size: 30px;
+  color: black
+}
+
+.card-thumb {
+  width: 100%;
+}
+
+.stats {
+  margin: 40px 0 25px;
+  font-size: 18px;
+}
+
+.stats-top, .stats-bottom {
+  display: flex;
+  justify-content: space-between;
+  span {color: black;}
+  span:last-child {text-align: right;}
+}
+
+.stats-top span {
+  font-weight: bold;
+}
+
+.stats-bottom #donated-total {
+  font-weight: bold;
+}
+
+.bar-graph, .bar-graph-inner {
+  height: 40px;
+}
+
+.bar-graph {
+  margin: 10px 0;
+  width: 100%;
+  background-color: #C2C2C2;
+}
+
+.bar-graph-inner {
+  width: 65%;
+  background-color: $colorMain;
+}
+
+button {
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 10px;
+  width: 50%;
+  border-radius: 20px;
+  border: none;
+  background-color: $colorMain;
+}
+
+.footer {
+  margin-top: 65px;
+  text-align: center;
+}
